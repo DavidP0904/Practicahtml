@@ -1,0 +1,17 @@
+.header {
+    background-color: #082f57;
+    padding: 20px;
+    text-align: center;
+}
+.container-contador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.contador-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(3, 53, 36);
+}
