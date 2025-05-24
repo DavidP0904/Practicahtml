@@ -1,17 +1,26 @@
-.header {
-    background-color: #082f57;
+.header{
+    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
 }
-.container-contador {
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-contador{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    max-width: 50%;
 }
-.contador-value {
+
+.contador-value{
     font-size: 48px;
     font-weight: bold;
-    color: rgb(3, 53, 36);
+    color: #343a40;
 }
