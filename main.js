@@ -17,6 +17,10 @@ function decrementar() {
     valor--;
     //actualizar el valor del contador
     document.getElementById("contador").textContent = valor;
+    if (valor < 0) {
+        //si el valor es menor que 0, reiniciar el contador
+        reiniciar();
+    }
 }
 
 function reiniciar() {
