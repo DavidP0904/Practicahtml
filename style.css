@@ -15,8 +15,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    max-width: 50%;
+    height: 82vh;
+    min-width: 50%;
 }
 
 .contador-value{

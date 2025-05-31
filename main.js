@@ -1,57 +1,27 @@
-function incrementar() {
-    //obtener el valor del contador
-    let valor = document.getElementById("contador").textContent;
-    //convertir el valor a un entero
-    valor = parseInt(valor);
-    //incrementar el valor
-    valor++;
-    //actualizar el valor del contador
-    document.getElementById("contador").textContent = valor;
+function incrementar(contador) {
+  // Obtenemos el valor actual del contador
+  let valor = document.getElementById('contador-' + contador).textContent;
+  // Convertimos el valor a un número entero
+  valor = parseInt(valor);
+  // Incrementamos el valor
+  valor++;
+  // Actualizamos el contenido del elemento con el nuevo valor
+  document.getElementById('contador-' + contador).textContent = valor;
 }
-function decrementar() {
+function decrementar(contador) {
     //obtener el valor del contador
-    let valor = document.getElementById("contador").textContent;
+    let valor = document.getElementById("contador-" + contador).textContent;
     //convertir el valor a un entero
     valor = parseInt(valor);
-    //decrementar el valor
+      if (valor > 0) {
     valor--;
+  }
     //actualizar el valor del contador
-    document.getElementById("contador").textContent = valor;
-    if (valor < 0) {
-        //si el valor es menor que 0, reiniciar el contador
-        reiniciar();
-    }
+    document.getElementById("contador-" + contador).textContent = valor;
+    
 }
 
-function reiniciar() {
+function reiniciar(contador) {
     //reiniciar el valor del contador
-    document.getElementById("cont").textContent = 0;
+    document.getElementById("contador-" + contador).textContent = 0;
 }
-function incrementar2() {
-    //obtener el valor del contador
-    let valor = document.getElementById("cont").textContent;
-    //convertir el valor a un entero
-    valor = parseInt(valor);
-    //incrementar el valor
-    valor++;
-    //actualizar el valor del contador
-    document.getElementById("cont").textContent = valor;
-}
-function decrementar2() {
-    //obtener el valor del contador
-    let valor = document.getElementById("cont").textContent;
-    //convertir el valor a un entero
-    valor = parseInt(valor);
-    //decrementar el valor
-    valor--;
-    //actualizar el valor del contador
-    document.getElementById("cont").textContent = valor;
-    if (valor < 0) {
-        //si el valor es menor que 0, reiniciar el contador
-        reiniciar2();
-    }
-}
-function reiniciar2() {
-    //reiniciar el valor del contador
-    document.getElementById("cont").textContent = 0;
-}   
