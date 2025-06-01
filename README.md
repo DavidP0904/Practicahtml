@@ -3,7 +3,12 @@ Practica 2 html funciones en MAIN.js
 
 # INFORMACION DEL ESTUDIANTE
 Nombre: David Enrique Pérez Bejarano
+#
 Materia: Diseño y Programación Web
+#
+Carrera: Sistemas Informaticos
+#
+En este repositorio se llegara a observar funciones simples del programa Javascript para dar uso a los botones dado por la pagina hecha
 ## USO DEL MAIN.JS, STYLE.CSS, INDEX.HTML EN PROYECTO PAGINA WEB
 ``` javascript
 function incrementar(contador) {
